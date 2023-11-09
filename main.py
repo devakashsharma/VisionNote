@@ -37,23 +37,24 @@ class_ids = []
 width, height = image.shape[1], image.shape[0]
 
 # Process YOLO detections
-for detection in output:
-    scores = detection[5:]
-    class_id = np.argmax(scores)
-    confidence = scores[class_id]
+for output in Layeroutput:
+    for detection in output:
+        scores = detection[5:]
+        class_id = np.argmax(scores)
+        confidence = scores[class_id]
 
-    if confidence > 0.7:
-        center_x = int(detection[0] * width)
-        center_y = int(detection[1] * height)
-        w = int(detection[2] * width)
-        h = int(detection[3] * height)
+        if confidence > 0.7:
+            center_x = int(detection[0] * width)
+            center_y = int(detection[1] * height)
+            w = int(detection[2] * width)
+            h = int(detection[3] * height)
 
-        x = int(center_x - w / 2)
-        y = int(center_y - h / 2)
+            x = int(center_x - w / 2)
+            y = int(center_y - h / 2)
 
-        boxes.append([x, y, w, h])
-        confidences.append(float(confidence))
-        class_ids.append(class_id)
+            boxes.append([x, y, w, h])
+            confidences.append(float(confidence))
+            class_ids.append(class_id)
 
 # len(boxes)
 
