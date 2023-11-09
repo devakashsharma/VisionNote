@@ -23,3 +23,8 @@ pip install opencv-python
 ```
 pip install matplotlib
 ```
+
+Now, Vist this offical website of YOLO - [CLICK HERE](https://pjreddie.com/yolo/)
+
+And you can you can any versions of it. <br>
+In this project we will be using YOLOv3-tiny for our project. Because YOLOv3-tiny is often considered a good choice for beginners, Smaller Module Size, Fast interface, Lighter Weight.
