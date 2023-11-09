@@ -41,3 +41,7 @@ YOLOv3-tiny is often considered a good choice for beginners for the following re
 **Lighter Weight:** The model weights are smaller in size, making them easier to download and work with.
 
 **Decent Performance:** While it may not achieve the same high accuracy as larger YOLOv3 models, it still provides reasonable object detection performance.
+
+## Images
+Now, Download the appropriate image for the detection <br>
+You can find all the images in the assest folder.
