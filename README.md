@@ -7,3 +7,19 @@ VisionNote is a simple object detection module leveraging the power of YOLOv3 (Y
 - **Technology Stack:**
   - YOLOv3
   - OpenCV
+
+## Getting Started
+
+### Installation
+1. Python
+```
+pip install python
+```
+2. opencv
+```
+pip install opencv-python
+```
+3. matplotlib
+```
+pip install matplotlib
+```
