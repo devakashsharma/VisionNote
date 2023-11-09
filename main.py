@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Initialize YOLO v3 with its weights, configuration, and class names
-yolo = cv2.dnn.readNet("path/to/yolov3-tiny.weights", "path/to/yolov3-tiny.cfg")
+yolo = cv2.dnn.readNet("C:/Users/soula/Downloads/yolov3-tiny.weights", "C:/Users/soula/Downloads/yolov3-tiny.cfg")
 classes = []
-with open("path/to/coco.names") as f:
-    classes = f.read().splitlines()
+with open("C:/Users/soula/Downloads/coco.names") as f:
+  classes = f.read().splitlines()
 
 # Load the image you want to detect (change the path as per your image)
-image = cv2.imread("path/to/your/image.jpg")
+image = cv2.imread("C:/Users/soula/Downloads/car1.jpg")
 
 # Prepare the image for YOLO input
 blob = cv2.dnn.blobFromImage(image, 1/255, (320, 320), (0, 0, 0), swapRB=True, crop=False)
