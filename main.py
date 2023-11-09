@@ -56,8 +56,6 @@ for output in Layeroutput:
             confidences.append(float(confidence))
             class_ids.append(class_id)
 
-# len(boxes)
-
 # Apply non-maximum suppression to filter out overlapping detections
 indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 
