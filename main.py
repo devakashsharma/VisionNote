@@ -10,7 +10,8 @@ with open("C:/Users/soula/Downloads/coco.names") as f:
   classes = f.read().splitlines()
 
 # Load the image you want to detect (change the path as per your image)
-image = cv2.imread("C:/Users/soula/Downloads/car1.jpg")
+image = cv2.imread("C:/Users/soula/Downloads/smartBus.jpg")
+# image = cv2.imread("C:/Users/soula/Downloads/car1.jpg")
 
 # Prepare the image for YOLO input
 blob = cv2.dnn.blobFromImage(image, 1/255, (320, 320), (0, 0, 0), swapRB=True, crop=False)
