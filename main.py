@@ -76,7 +76,7 @@ if len(indexes) > 0:
 
     cv2.rectangle(image, (x, y), (x+w, y+h), color, 20)
     # cv2.putText(image, label + " " + confi, (x, y+20), font, (255, 255, 255), 2)
-    cv2.putText(image, label + " " + confi, (x, y + 20), font, 3.0, (255, 255, 255), 2)
+    cv2.putText(image, label + " " + confi, (x, y + 50), font, 3.0, (255, 255, 255), 2)
 
 # Display the image with bounding boxes
 plt.imshow(image)
