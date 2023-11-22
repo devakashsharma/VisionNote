@@ -76,6 +76,9 @@ if len(indexes) > 0:
     # cv2.putText(image, label + " " + confi, (x, y+20), font, (255, 255, 255), 2)
     cv2.putText(image, label + " " + confi, (x, y + 50), font, 3.0, (255, 255, 255), 2)
 
+# Converting BGR Image to RGB
+rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
 # Display the image with bounding boxes
 plt.imshow(image)
 plt.show()
