@@ -45,3 +45,5 @@ YOLOv3-tiny is often considered a good choice for beginners for the following re
 ## Images
 Now, Download the appropriate image for the detection <br>
 You can find all the images in the assest folder.
+
+## About VisionNote
